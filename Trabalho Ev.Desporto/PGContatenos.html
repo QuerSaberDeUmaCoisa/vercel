@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contate-nos</title>
+    <style>
+        * {
+            margin: 5;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-top: 80px;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            position: fixed; 
+            top: 0;          
+            left: 0;
+            width: 100%;     
+            z-index: 1000;  
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #ddd;
+        }
+
+        .icon {
+            width: 30px;
+            vertical-align: middle;
+        }
+
+
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="index.html"><img src="img/HOMEBTT.png" alt="Home" class="icon"></a>
+            <a href="PGInicio.html#projeto">Projeto</a>
+            <a href="PGSobre.html">Sobre</a>
+            <a href="PGContatenos.html">Contate-nos</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>Se você tem alguma dúvida ou comentário, preencha o formulário abaixo para enviar uma mensagem.</p>
+
+        <div class="contact-form">
+
+            <form action="https://formspree.io/f/xovqqdwj" method="POST">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="message">Sua Mensagem:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 - Contate-nos</p>
+    </footer>
+
+</body>
+</html>
